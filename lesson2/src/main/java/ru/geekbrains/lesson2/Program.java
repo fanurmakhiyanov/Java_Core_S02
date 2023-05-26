@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Program {
 
+    private static final int WIN_COUNT = 4;
     private static final char DOT_HUMAN = 'X';
     private static final char DOT_AI = 'O';
     private static final char DOT_EMPTY = '•';
@@ -57,7 +58,7 @@ public class Program {
      */
     private static void printField() {
         // Header
-        System.out.print("+");
+        System.out.print("┌");
         for (int i = 0; i < fieldSizeX * 2 + 1; i++) {
             System.out.print((i % 2 == 0) ? "-" : i / 2 + 1);
         }
